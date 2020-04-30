@@ -1,0 +1,18 @@
+.card-deck {
+	.card {
+		margin: 1em;
+		border: 1px solid #2c396b;
+		box-shadow: -3px 5px 15px #2c396b;
+		border-radius: 0;
+		.image {
+			min-height: 30vh;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+		ul {
+			padding-left: 15px;
+		}		
+	}
+}

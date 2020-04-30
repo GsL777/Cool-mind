@@ -1,0 +1,79 @@
+//Colors
+$white: #fff;
+$bright-gray: #bbb;
+$gray80: #ccc;
+$red: #f00;
+$tuna: #33353d;
+$aluminium: #818a91;
+$aluminium2: #eceeef;
+$bossanova: #402351;
+$rhino: #2c396b;
+
+$dodger-blue: #29aafe;
+$mariner: #3b5998;
+$sky-blue: #00aced;
+$cerulean: #007bb6;
+$french-rose: #ea4c89;
+
+//Fonts
+
+
+//Placeholder
+
+@mixin flexbox() {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+
+%flex-direction-column {
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+%align-items-center {
+	 -webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+%justify-content-center {
+	-webkit-justify-content: center;
+	justify-content: center;	
+}
+
+@mixin transform($val) {
+	-webkit-transform: $val;
+	-moz-transform: $val;
+	-ms-transform: $val;
+	-o-transform: $val;
+	transform: $val;
+}
+
+@mixin animate ($attr, $time){
+	-webkit-transition: $attr $time ease-in-out;
+	-moz-transition: $attr $time ease-in-out;
+	-ms-transition: $attr $time ease-in-out;
+	-o-transition: $attr $time ease-in-out;
+	transition: $attr $time ease-in-out;
+}
+
+@mixin animate2 ($attr, $time){
+	-webkit-transition: $attr $time linear;
+	-moz-transition: $attr $time linear;
+	-ms-transition: $attr $time linear;
+	-o-transition: $attr $time linear;
+	transition: $attr $time linear;
+}
+
+//Media Queries
+$xs: 575px; /*Extra small devices (portrait phones, less than 576px)*/
+
+$sm: 767px; /* Small devices (landscape phones, less than 768px)*/
+
+$md: 991px; /* Medium devices (tablets, less than 992px)*/
+
+$lg: 1199px; /* Large devices (desktops, less than 1200px)*/

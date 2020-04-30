@@ -1,0 +1,60 @@
+.header {
+	background-image: radial-gradient(circle at 62% 38%, #8242a8 0, #402351 100%);
+	position: relative;
+
+	width: 100%;
+	height: 46vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: auto 700px;
+
+	@include flexbox();
+    @extend %flex-direction-column;
+    @extend %justify-content-center;
+    @extend %align-items-center;
+	.header-svg {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 6vw;
+		margin-bottom: -.4px;
+	}
+	.header-heading {
+		color: $white;
+		padding-top: 50px;
+		text-align: center;
+		/*font: 44px "Arial";*/
+		text-transform: uppercase;
+	}
+	.strapline {
+		color: $white;
+		padding-top: 12.5px;
+		text-align: center;
+	}
+}
+
+@media (min-width: $lg) {
+	.header {
+	    height: 700px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+	}
+}
+
+
+.content {
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	.content-heading {
+		padding: 1em 0;
+		text-align: center;
+	}
+	.body-content {
+		padding-top: 12.5px;
+		padding-bottom: 25px;
+		text-align: center;
+	}
+}

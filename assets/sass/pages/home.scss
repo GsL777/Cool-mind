@@ -1,0 +1,229 @@
+/*
+	====================================
+		About Us
+	====================================
+*/
+.about-us {
+	padding: 1em 0;
+}
+
+/*
+	====================================
+		Inner Balance
+	====================================
+*/
+.table {
+	display: table;
+	width: 50%;
+	height: 300px;
+	overflow: hidden;
+}
+
+@media (max-width: $sm) {
+	.table {
+		width: 100%;
+	}
+}
+
+.table-cell {
+	display: table-cell;
+	width: 50%;
+	height: 50%;
+	vertical-align: middle;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.section-content {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	.site {
+		border-right: 5px $white solid;
+		margin: 0 30px;
+		max-height: 400px;
+		.site-title {
+			text-align: center;
+			color: $white;
+		}
+		p {
+			color: $white;
+		}
+	}
+}
+
+@media (max-width: $xs) {
+	.section-content {
+		.site {
+			padding: 0 0 35px 0;
+			max-height: 440px;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	.section-content {
+		.site {
+			padding: 50px;
+			max-height: 400px;
+		}
+	}
+}
+
+.balance {
+	position: relative;
+	height: 500px;
+	background-image: linear-gradient(#ff9d2f, #ff6126);
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	h2 {
+		font: 44px "Arial";
+		text-align: center;
+		color: $white;
+	}
+}
+
+.svg-class {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10vw;
+	margin-bottom: -.4px;
+}
+
+/*
+	====================================
+		Our Courses
+	====================================
+*/
+.our-courses {
+	h2 {
+		padding: 1em 0;
+		text-align: center;
+	}					
+}
+
+.image-content {
+	.image {
+		height: 100px;
+		width: 100px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+
+		display: flex;
+		margin: 10px auto;
+		border-radius: 50%;
+	}
+}
+
+/*
+	====================================
+		Worldview
+	====================================
+*/
+.worldview {
+	position: relative;
+	background-color: $bossanova;
+	background-image: radial-gradient(circle at 62% 38%, #8242a8 0, $bossanova 100%);
+	position: relative;
+
+	height: 500px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+
+	background-attachment: fixed;	
+	.section-top{
+		.section-svg {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 8vw;
+			margin-top: -.4px;
+		}
+	}
+}
+
+@media (max-width: $xs) {
+	.section-main {
+		.text {
+			.table {
+				position: absolute;
+				right: 0;
+				top: 10px;
+				bottom: 0;
+				.table-cell {
+					.site {
+						border-left: 5px $white solid;
+						margin: 0 30px;
+						padding: 15px;
+						max-height: 413px;
+						.site-title {
+							text-align: center;
+							color: $rhino;
+						}
+						.site-description {
+							color: $rhino;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 576px){
+	.section-main {
+		.text {
+			.table {
+				position: absolute;
+				right: 0;
+				top: 10px;
+				bottom: 0;
+				.table-cell {
+					.site {
+						border-left: 5px $white solid;
+						margin: 0 30px;
+						padding: 85px 15px;
+						max-height: 413px;
+						.site-title {
+							text-align: center;
+							color: $rhino;
+						}
+						.site-description {
+							color: $rhino;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+	====================================
+		Yoga experience
+	====================================
+*/
+.experience {
+	-webkit-box-flex: 1;
+	flex-grow: 1;	
+	h2 {
+		padding: 1em 0 0 0;
+	}
+	.content-heading {
+		padding: 1em 0;
+		text-align: center;
+	}
+	.body-content {
+		padding-top: 12.5px;
+		padding-bottom: 25px;
+		text-align: center;
+	}
+}

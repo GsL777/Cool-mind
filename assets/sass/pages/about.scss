@@ -1,0 +1,21 @@
+.our-mission {
+	padding: 1em 0;
+	.row-style {
+		justify-content: center;
+		.img {
+			display: flex;
+			margin: 2em auto;
+			height: 400px;
+			width: 200px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			box-shadow: -3px 5px 15px #2c396b;
+		}
+		.coaches {
+			h3 {
+				margin: 0 .7em;
+			}
+		}
+	}
+}
